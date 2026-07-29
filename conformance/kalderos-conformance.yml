@@ -1,0 +1,50 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.kalderos.com/company/security
+notes: >-
+  Kalderos publishes no public OpenAPI (the former api-docs.kalderos.com developer
+  portal no longer resolves following the Model N acquisition), so cross-cutting API
+  standards below are asserted from the public security/compliance page and product
+  documentation rather than derived from a spec. Compliance-program conformance is
+  taken verbatim from https://www.kalderos.com/company/security.
+standards:
+  - id: soc2
+    conforms: true
+    evidence: >-
+      "Kalderos' Truzo platform is built to SOC 1 and SOC 2 standards." SOC 3 report
+      is publicly downloadable; SOC 1 and SOC 2 reports are available on request.
+  - id: soc1
+    conforms: true
+    evidence: Truzo platform built to SOC 1 standards; SOC 1 report available on request.
+  - id: iso-27001
+    conforms: true
+    evidence: >-
+      Platform built following the guidance outlined in the ISO 27001 information
+      security management framework (company/security).
+  - id: nist-800-53
+    conforms: true
+    evidence: >-
+      Security controls aligned to NIST SP 800-53 guidance (company/security).
+  - id: hipaa
+    conforms: true
+    evidence: >-
+      HIPAA compliance documented; a "HIPAA Frequently Asked Questions for Data
+      Associated with 340B Drug Pricing Program" is published (company/security).
+  - id: pci-dss
+    conforms: false
+    evidence: >-
+      No PCI DSS certification claimed; rebate payment settlement is handled through a
+      third-party payment provider rather than Kalderos processing cards directly.
+  - id: fedramp
+    conforms: false
+    evidence: No FedRAMP authorization claimed on the public security page.
+  - id: gdpr
+    conforms: false
+    evidence: >-
+      No GDPR statement published; Kalderos operates in the U.S. drug-discount domain.
+  - id: oauth2
+    conforms: unknown
+    evidence: >-
+      No public OpenAPI or OIDC discovery document is resolvable; app.kalderos.com is a
+      single-page application behind authentication with MFA (help center documents MFA),
+      but the authorization scheme is not publicly specified.

@@ -1,8 +1,20 @@
 aid: kalderos
 name: Kalderos
-description: 'Kalderos is a company surfaced as a portfolio company of bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Kalderos is a Chicago-based healthcare technology company, founded in 2016, that
+  built what it calls the first Drug Discount Management platform. It helps
+  pharmaceutical manufacturers, covered entities (safety-net healthcare providers),
+  and state Medicaid programs manage compliance across U.S. drug discount programs —
+  most notably 340B — using data, AI, and machine learning to identify noncompliant
+  or duplicate discounts, streamline good-faith-inquiry and dispute resolution, and
+  move rebates transparently between stakeholders. Marquee products include 340B Pay,
+  the Truzo rebate-payment platform, Discount Hub for covered entities, and MDRP and
+  Commercial Discount Monitoring for manufacturers. Kalderos was acquired by Model N
+  in 2024 to expand Model N's revenue-management and 340B capabilities for life
+  sciences. This profile was surfaced as a portfolio company of Bain Capital Ventures
+  and enriched by the API Evangelist pipeline; Kalderos operates a customer-facing
+  application (app.kalderos.com) and previously published developer API documentation
+  that is no longer resolvable post-acquisition.
 url: https://raw.githubusercontent.com/api-evangelist/kalderos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +22,32 @@ x-backed-by:
 - bain-capital-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- 340B
+- Drug Discounts
+- Rebate Management
+- Compliance
+- Life Sciences
+- Pharmaceutical
+- Medicaid
+- Health Tech
+image: https://cdn.prod.website-files.com/5e879131f99d7c509b67cd6f/61d62544bcc700e78a7e1cb1_Kalderos_Open_Graph.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +55,38 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kalderos-domain-security.yml
 - type: Website
   url: https://www.kalderos.com/
+- type: About
+  url: https://www.kalderos.com/company/about
+- type: Support
+  url: https://help.kalderos.com/hc/en-us
+- type: HelpCenter
+  url: https://help.kalderos.com/hc/en-us
+- type: Login
+  url: https://app.kalderos.com/
+- type: Blog
+  url: https://www.kalderos.com/resources/blog
+- type: TermsOfService
+  url: https://www.kalderos.com/company/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.kalderos.com/company/privacy-policy
+- type: Security
+  url: https://www.kalderos.com/company/security
+- type: TrustCenter
+  url: security/kalderos-trust-center.yml
+- type: Compliance
+  url: https://www.kalderos.com/company/security
+- type: VulnerabilityDisclosure
+  url: security/kalderos-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/kalderos-conformance.yml
+- type: LLMsTxt
+  url: llms/kalderos-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
